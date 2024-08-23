@@ -35,7 +35,7 @@ Observações:
 Os respectivos critérios de matéria, tema proposto e tese são: {criterios}.
 
             """
-        resposta = model.generate_content(prompt, generation_config = gemini.GenerationConfig (temperature=2))
+        resposta = model.generate_content(prompt, generation_config = gemini.GenerationConfig (temperature=0,1))
         print(resposta)
 
         # Extrai a receita do texto da resposta
