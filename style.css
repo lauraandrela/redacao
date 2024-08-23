@@ -1,0 +1,164 @@
+/* Importações de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=NTR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=NTR&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+/* Reset e Estilo Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #ffe1cd;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: "Bebas Neue", sans-serif;
+    color: #143547;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    background-color: #143547;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.texto {
+    flex: 1;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.texto p {
+    text-align: left;
+    color: #fff;
+}
+
+.img {
+    flex: 0 0 200px;
+}
+
+.img img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+.formulario {
+    border: 1px solid #7e7d7d;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #000;
+    box-shadow: 3px 3px 3px #000000AA;
+    margin-top: 20px;
+}
+
+.formulario h3 {
+    color: #143547;
+    text-align: center;
+}
+
+.response {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    text-align: left;
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 3px 3px 3px #000000AA;
+}
+
+.criterio-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.criterio-input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.btn-success {
+    background-color: #143547;
+    border-radius: 6px;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #143547;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .img {
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+    .formulario, .response {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .formulario, .response {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .btn-success {
+        width: 100%;
+    }
+}
